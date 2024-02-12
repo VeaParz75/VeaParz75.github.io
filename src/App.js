@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+// STEPS TO GET THIS THING TO WORK
+// stage all changes and then add commit DONT PUSH IT DOES IT FOR YOU
+// load veaparz75.github.io to see changes
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and heyy did this work because then this is where i edit.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to My Website</h1>
       </header>
+      <main>
+        <section>
+          <h2>About Me</h2>
+          <p>Welcome! I'm glad you found your way to my website. Here's a little bit about me...</p>
+          <p>I am passionate about technology, coding, and continuous learning.</p>
+          {/* Add more information about yourself here */}
+        </section>
+        <section>
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out to me via email or social media:</p>
+          <ul>
+            <li>Email: your.email@example.com</li>
+            {/* Add your social media links here */}
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
