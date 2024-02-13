@@ -1,12 +1,23 @@
-// Home.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Typography, Button, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { FaPython, FaNodeJs, FaReact, FaJava } from 'react-icons/fa';
 import { SiQiskit } from 'react-icons/si'; // Qiskit icon from react-icons/si
+import './Home.css'; // Import CSS file for styling
 
 const Home = () => {
   const theme = useTheme();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Set isVisible to true after a short delay to gradually reveal the intro text
+    const timeoutId = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Adjust the delay as needed
+
+    // Clear the timeout on component unmount to prevent memory leaks
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <Box
@@ -22,10 +33,10 @@ const Home = () => {
         padding: '0 20px',
       }}
     >
-      <Typography variant="h2" gutterBottom>
+      <Typography variant="h2" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
         Hi! I'm Vea. It's nice to meet you!
       </Typography>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'}>
         Explore my projects, resume, and more.
       </Typography>
       <Button
