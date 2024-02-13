@@ -13,7 +13,7 @@ const Home = () => {
     // Set isVisible to true after a short delay to gradually reveal the intro text
     const timeoutId = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Adjust the delay as needed
+    }, 300); // Adjust the delay as needed
 
     // Clear the timeout on component unmount to prevent memory leaks
     return () => clearTimeout(timeoutId);
@@ -36,7 +36,7 @@ const Home = () => {
       <Typography variant="h2" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
         Hi! I'm Vea. It's nice to meet you!
       </Typography>
-      <Typography variant="h5" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'}>
+      <Typography variant="h5" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text' } style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 200 }}>
         Explore my projects, resume, and more.
       </Typography>
       <Button
@@ -52,9 +52,9 @@ const Home = () => {
       
       <Box sx={{ marginTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <FaPython style={{ fontSize: '3em', color: 'lightblue', margin: '0 10px' }} />
-        <FaNodeJs style={{ fontSize: '3em', color: 'yellow', margin: '0 10px' }} />
-        <FaReact style={{ fontSize: '3em', color: 'lightgreen', margin: '0 10px' }} />
         <FaJava style={{ fontSize: '3em', color: 'red', margin: '0 10px' }} />
+        <FaReact style={{ fontSize: '3em', color: 'lightgreen', margin: '0 10px' }} />
+        <FaNodeJs style={{ fontSize: '3em', color: 'yellow', margin: '0 10px' }} />
         <SiQiskit style={{ fontSize: '3em', color: 'white', margin: '0 10px' }} />
       </Box>
     </Box>
