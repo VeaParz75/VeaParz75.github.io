@@ -15,11 +15,13 @@ const About = () => {
             vee-ya).
           </p>
           <p className="pb-5">
-            I am a BSc in Computer Science with a focus in Machine Intelligence and a BA in Political Science with a focus in International Relations.
+            I am pursuing a BSc in Computer Science with a focus in Machine Intelligence and a BA in Political Science with a focus in International Relations.
+            I am a lead undergraduate research assistant in NanoML, a division of Professor Alexandra Boltasseva's research group at Purdue University. I primarily work in 
+            quantum machine learning, specifically within topological optimization and quantum complexity theory.
           </p>
-          <p>I'm proficient in Python, Java, C, C++ and Qiskit.</p>
-          <p>
-            In my spare time, I draw, play videogames and read. (WIP lmao)
+          <p>I'm proficient in Python, Java, JavaScript, C, C++ and Qiskit, and I am also proficient in the MERN stack.</p>
+          <p className="pb-5">
+            I love to draw, play videogames and read. You can also check out my art portfolio here (hyperlink). The Legend of Zelda is my favourite gaming franchise???? wind waker is my fav game :))) (WIP lmao)
           </p>
         </div>
         <div className="about-img">

@@ -51,8 +51,9 @@ const Home = () => {
         size="large"
         sx={{ marginTop: '20px' }}
         className={isVisible ? 'fade-in intro-text' : 'intro-text'}
+        style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}
       >
-        View Projects
+        Get in touch
       </Button>
       
       <Box sx={{ marginTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
