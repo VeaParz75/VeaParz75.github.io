@@ -11,7 +11,7 @@ const About = () => {
             About Me
           </h2>
           <p className="pb-5">
-            Hi! My name is Vaishnavi, but you can call me Vea (pronounced
+            Hiya! My name is Vaishnavi, but you can call me Vea (pronounced
             vee-ya).
           </p>
           <p className="pb-5">
