@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.45437137.css",
-    "main.js": "/static/js/main.b5d3f7f0.js",
+    "main.css": "/static/css/main.2767e37a.css",
+    "main.js": "/static/js/main.76294f94.js",
     "static/js/592.f195dc85.chunk.js": "/static/js/592.f195dc85.chunk.js",
-    "static/media/picture-of-me.JPG": "/static/media/picture-of-me.b597dc8b6d28ffd6dfe3.JPG",
-    "static/media/wip.png": "/static/media/wip.0022bdfe0451e46f2d35.png",
-    "static/media/qiskit.png": "/static/media/qiskit.f721bac7836b515c607a.png",
-    "static/media/microsoft.jpg": "/static/media/microsoft.3dca1eea33fa2c632254.jpg",
-    "static/media/qsc.jpg": "/static/media/qsc.9a86cf9c4c26d93d8477.jpg",
+    "static/media/hachimitsu.png": "/static/media/hachimitsu.14fced7d44d28c93baaa.png",
+    "static/media/mori.png": "/static/media/mori.6c1082258a9919012d9b.png",
+    "static/media/kirbcake.png": "/static/media/kirbcake.40bd92b56226ecba5a88.png",
+    "static/media/getting_out_of_a_rut.png": "/static/media/getting_out_of_a_rut.10d4e2408f849dc62748.png",
+    "static/media/IMG_6400.JPG": "/static/media/IMG_6400.69f11b5fe2099cf3e6d8.JPG",
     "index.html": "/index.html",
-    "main.45437137.css.map": "/static/css/main.45437137.css.map",
-    "main.b5d3f7f0.js.map": "/static/js/main.b5d3f7f0.js.map",
+    "main.2767e37a.css.map": "/static/css/main.2767e37a.css.map",
+    "main.76294f94.js.map": "/static/js/main.76294f94.js.map",
     "592.f195dc85.chunk.js.map": "/static/js/592.f195dc85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45437137.css",
-    "static/js/main.b5d3f7f0.js"
+    "static/css/main.2767e37a.css",
+    "static/js/main.76294f94.js"
   ]
 }
