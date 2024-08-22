@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=/" />
     <script type="text/javascript">
-        // Redirect the user to the index page
-        window.location.href = "/";
+        // Redirect the user back to the correct path
+        var redirectTo = window.location.pathname;
+        window.location.replace("/" + redirectTo);
     </script>
 </head>
 <body>
