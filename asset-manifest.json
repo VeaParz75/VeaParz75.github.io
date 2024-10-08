@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e945666.css",
-    "main.js": "/static/js/main.44fa6c40.js",
+    "main.css": "/static/css/main.4ff616eb.css",
+    "main.js": "/static/js/main.519e5277.js",
     "static/js/592.f195dc85.chunk.js": "/static/js/592.f195dc85.chunk.js",
     "static/media/watercolour.png": "/static/media/watercolour.6f4c3f78641f24433876.png",
     "static/media/leaf.png": "/static/media/leaf.fd65c79e87df0b884f63.png",
@@ -23,6 +23,7 @@
     "static/media/umi.png": "/static/media/umi.1d5872e956e182cb6500.png",
     "static/media/book.png": "/static/media/book.cd3f8d501c2e8a1a6c55.png",
     "static/media/newer.png": "/static/media/newer.9ea59d8484fe4bff82ee.png",
+    "static/media/yippee.png": "/static/media/yippee.5606810cc3416240c5e6.png",
     "static/media/i_fall_asleep_to_this.png": "/static/media/i_fall_asleep_to_this.f336f5a9775673e48b88.png",
     "static/media/hmc.png": "/static/media/hmc.25549cf3d57adc30c5c0.png",
     "static/media/bench.png": "/static/media/bench.9239ad737ba2d6925c3b.png",
@@ -90,12 +91,12 @@
     "static/media/bored_at_work.png": "/static/media/bored_at_work.d6e9fcdffdee30b1d31e.png",
     "static/media/IMG_6400.JPG": "/static/media/IMG_6400.69f11b5fe2099cf3e6d8.JPG",
     "index.html": "/index.html",
-    "main.3e945666.css.map": "/static/css/main.3e945666.css.map",
-    "main.44fa6c40.js.map": "/static/js/main.44fa6c40.js.map",
+    "main.4ff616eb.css.map": "/static/css/main.4ff616eb.css.map",
+    "main.519e5277.js.map": "/static/js/main.519e5277.js.map",
     "592.f195dc85.chunk.js.map": "/static/js/592.f195dc85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e945666.css",
-    "static/js/main.44fa6c40.js"
+    "static/css/main.4ff616eb.css",
+    "static/js/main.519e5277.js"
   ]
 }
