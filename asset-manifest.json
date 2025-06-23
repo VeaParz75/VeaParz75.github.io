@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ff616eb.css",
-    "main.js": "/static/js/main.519e5277.js",
+    "main.css": "/static/css/main.de8e3df3.css",
+    "main.js": "/static/js/main.912de509.js",
     "static/js/592.f195dc85.chunk.js": "/static/js/592.f195dc85.chunk.js",
     "static/media/watercolour.png": "/static/media/watercolour.6f4c3f78641f24433876.png",
     "static/media/leaf.png": "/static/media/leaf.fd65c79e87df0b884f63.png",
@@ -24,6 +24,7 @@
     "static/media/book.png": "/static/media/book.cd3f8d501c2e8a1a6c55.png",
     "static/media/newer.png": "/static/media/newer.9ea59d8484fe4bff82ee.png",
     "static/media/yippee.png": "/static/media/yippee.5606810cc3416240c5e6.png",
+    "static/media/existential_frog.png": "/static/media/existential_frog.e8e17c62c572da521053.png",
     "static/media/i_fall_asleep_to_this.png": "/static/media/i_fall_asleep_to_this.f336f5a9775673e48b88.png",
     "static/media/hmc.png": "/static/media/hmc.25549cf3d57adc30c5c0.png",
     "static/media/bench.png": "/static/media/bench.9239ad737ba2d6925c3b.png",
@@ -49,6 +50,7 @@
     "static/media/miwa..png": "/static/media/miwa..08f34f8f6b406c2f4987.png",
     "static/media/link_and_lonk.png": "/static/media/link_and_lonk.710e6842ab11455167e0.png",
     "static/media/skyline.png": "/static/media/skyline.a3f0eb1456475eea7c35.png",
+    "static/media/photosynthesis_kirb.png": "/static/media/photosynthesis_kirb.e8912b45dce6a79ae58b.png",
     "static/media/becca.png": "/static/media/becca.aa6f20fcae2b95673586.png",
     "static/media/happen.png": "/static/media/happen.27edb4135347010ef097.png",
     "static/media/water.png": "/static/media/water.9650acb88238c5ca8c34.png",
@@ -61,6 +63,7 @@
     "static/media/ed.png": "/static/media/ed.9abec7ad8254252dd8e8.png",
     "static/media/natsuyasumi.png": "/static/media/natsuyasumi.eab79cb222276a17f7a7.png",
     "static/media/heromari.png": "/static/media/heromari.5e93487caa6f06e17be8.png",
+    "static/media/angy_goj.png": "/static/media/angy_goj.e0dda2b30d36381bad90.png",
     "static/media/kiki.png": "/static/media/kiki.26770f34d2b9cbc50b0e.png",
     "static/media/beach.png": "/static/media/beach.430bfd4679a96ddbc342.png",
     "static/media/power_and_tink.png": "/static/media/power_and_tink.05eab9dfeab895b1a05b.png",
@@ -89,14 +92,13 @@
     "static/media/gumidad.png": "/static/media/gumidad.bebab142ea28058f4cec.png",
     "static/media/katsuki.png": "/static/media/katsuki.862f05f205057cf1d28e.png",
     "static/media/bored_at_work.png": "/static/media/bored_at_work.d6e9fcdffdee30b1d31e.png",
-    "static/media/IMG_6400.JPG": "/static/media/IMG_6400.69f11b5fe2099cf3e6d8.JPG",
     "index.html": "/index.html",
-    "main.4ff616eb.css.map": "/static/css/main.4ff616eb.css.map",
-    "main.519e5277.js.map": "/static/js/main.519e5277.js.map",
+    "main.de8e3df3.css.map": "/static/css/main.de8e3df3.css.map",
+    "main.912de509.js.map": "/static/js/main.912de509.js.map",
     "592.f195dc85.chunk.js.map": "/static/js/592.f195dc85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ff616eb.css",
-    "static/js/main.519e5277.js"
+    "static/css/main.de8e3df3.css",
+    "static/js/main.912de509.js"
   ]
 }
