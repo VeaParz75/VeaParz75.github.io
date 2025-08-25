@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f69fb410.css",
-    "main.js": "/static/js/main.0fc47792.js",
+    "main.css": "/static/css/main.87bd9a37.css",
+    "main.js": "/static/js/main.f3017059.js",
     "static/js/453.e6b06965.chunk.js": "/static/js/453.e6b06965.chunk.js",
     "static/media/angy_goj.webp": "/static/media/angy_goj.3221bfb3ce2d4122e97b.webp",
     "static/media/watercolour.webp": "/static/media/watercolour.d06f5599e0c4575ec295.webp",
@@ -36,14 +36,17 @@
     "static/media/les_macarons.webp": "/static/media/les_macarons.1a58362d01013ccbe121.webp",
     "static/media/hobie.webp": "/static/media/hobie.f73df2c9ec4002f6c9ec.webp",
     "static/media/angry_gumi.webp": "/static/media/angry_gumi.cc01e9a25ca21dd34fae.webp",
+    "static/media/i_hope_main_fig.webp": "/static/media/i_hope_main_fig.dcf5aa942c95d23e0412.webp",
+    "static/media/full_design_process.webp": "/static/media/full_design_process.4b7f2ced6a503b9a2391.webp",
+    "static/media/learning_to_vanish.webp": "/static/media/learning_to_vanish.4f42576090f9310444c5.webp",
     "static/media/its_me_again.webp": "/static/media/its_me_again.766644758ac6993926cc.webp",
     "index.html": "/index.html",
-    "main.f69fb410.css.map": "/static/css/main.f69fb410.css.map",
-    "main.0fc47792.js.map": "/static/js/main.0fc47792.js.map",
+    "main.87bd9a37.css.map": "/static/css/main.87bd9a37.css.map",
+    "main.f3017059.js.map": "/static/js/main.f3017059.js.map",
     "453.e6b06965.chunk.js.map": "/static/js/453.e6b06965.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f69fb410.css",
-    "static/js/main.0fc47792.js"
+    "static/css/main.87bd9a37.css",
+    "static/js/main.f3017059.js"
   ]
 }
