@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.495ab648.css",
-    "main.js": "/static/js/main.d8d4cf5b.js",
+    "main.css": "/static/css/main.d2890ada.css",
+    "main.js": "/static/js/main.63d90ed5.js",
     "static/js/453.e6b06965.chunk.js": "/static/js/453.e6b06965.chunk.js",
     "static/media/angy_goj.webp": "/static/media/angy_goj.3221bfb3ce2d4122e97b.webp",
     "static/media/watercolour.webp": "/static/media/watercolour.d06f5599e0c4575ec295.webp",
+    "static/media/education.png": "/static/media/education.c887079a08c73481e780.png",
     "static/media/she_is_back.webp": "/static/media/she_is_back.c3e648ed6dc13acdbe86.webp",
     "static/media/coffeeshop.webp": "/static/media/coffeeshop.8305ecd2b054cd63c53f.webp",
     "static/media/happen.webp": "/static/media/happen.11cdfa1dae20d2cf15b3.webp",
@@ -12,6 +13,7 @@
     "static/media/anti-rut_okarun.webp": "/static/media/anti-rut_okarun.350c3b13259eb750cd9d.webp",
     "static/media/book.webp": "/static/media/book.e968a8a1d185105a26b2.webp",
     "static/media/mori.webp": "/static/media/mori.b389b93de7920c293c04.webp",
+    "static/media/recognitions.png": "/static/media/recognitions.a6bcae5474d87af5a3b1.png",
     "static/media/yippee.webp": "/static/media/yippee.6fa60b1af594ca49fb1d.webp",
     "static/media/crossing_but_where_animal.webp": "/static/media/crossing_but_where_animal.d7eb210fbf7e6bbae8b0.webp",
     "static/media/sweater.jpg": "/static/media/sweater.905fbe7b96c6bfb85c2c.jpg",
@@ -21,6 +23,7 @@
     "static/media/to_lanayru.webp": "/static/media/to_lanayru.b4c8a0812d03e36c1826.webp",
     "static/media/link_and_lonk.webp": "/static/media/link_and_lonk.53c4073f3da5b07b85a9.webp",
     "static/media/jiji.jpg": "/static/media/jiji.992861cf88f9b422c4cc.jpg",
+    "static/media/about.png": "/static/media/about.039d005cd731a7d888fb.png",
     "static/media/power_and_tink.webp": "/static/media/power_and_tink.8e7e7c4fd2598da7eed1.webp",
     "static/media/becca.webp": "/static/media/becca.3b98eaf05d2d89eb7c47.webp",
     "static/media/bag.jpg": "/static/media/bag.415d8b59a8a31c47cfda.jpg",
@@ -31,6 +34,7 @@
     "static/media/kirbcake.webp": "/static/media/kirbcake.479e2cb35610a5e4ebae.webp",
     "static/media/room.webp": "/static/media/room.0b156ccee238ed451384.webp",
     "static/media/clonk.webp": "/static/media/clonk.46f65f98eadd7752a376.webp",
+    "static/media/experience.png": "/static/media/experience.cb455f271579dfc81ba7.png",
     "static/media/kirbottle.webp": "/static/media/kirbottle.b27b650f02736c3c88df.webp",
     "static/media/mei.webp": "/static/media/mei.91cc31a6d92f69c8bca9.webp",
     "static/media/unohana.webp": "/static/media/unohana.9a3f3a22a6415c199350.webp",
@@ -59,12 +63,12 @@
     "static/media/me_w_bag.webp": "/static/media/me_w_bag.aa286912d1c6bbdea020.webp",
     "static/media/its_me_again.webp": "/static/media/its_me_again.766644758ac6993926cc.webp",
     "index.html": "/index.html",
-    "main.495ab648.css.map": "/static/css/main.495ab648.css.map",
-    "main.d8d4cf5b.js.map": "/static/js/main.d8d4cf5b.js.map",
+    "main.d2890ada.css.map": "/static/css/main.d2890ada.css.map",
+    "main.63d90ed5.js.map": "/static/js/main.63d90ed5.js.map",
     "453.e6b06965.chunk.js.map": "/static/js/453.e6b06965.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.495ab648.css",
-    "static/js/main.d8d4cf5b.js"
+    "static/css/main.d2890ada.css",
+    "static/js/main.63d90ed5.js"
   ]
 }
