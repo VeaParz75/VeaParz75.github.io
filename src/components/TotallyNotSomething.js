@@ -20,16 +20,17 @@ const TotallyNotSomething = () => {
         <h1>wow you found this page that's crazy</h1>
         <p>So I really REALLY like plushies</p>
         <p>i even make them (i crochet lol)</p>
-        <p>This is a record of every single one of the 51 plushies I own</p>
+        <p>This is a record of every single one of the 52 plushies I own</p>
         <p>Yes.</p>
         <p>You read that right.</p>
-        <p>51. Plushies.</p>
+        <p>52. Plushies.</p>
         <p>this is how i choose to spend my money</p>
         <p>it could've been something worse if you ask me idk</p>
         <br></br>
         
         <p>Three Halloween Ghosts: Walmart, 2025</p>
         <p>Carby: Meijer, 2025</p>
+        <p>California Bear: San Diego, California, 2025</p>
         <p>King's Island Bear: King's Island, Ohio, 2025</p>
         <p>German Bear: Helen, GA, 2025</p>
         <p>London Double-Decker Bus: Royal Maritime Museum, Greenwich, United Kingdom, 2025</p>
