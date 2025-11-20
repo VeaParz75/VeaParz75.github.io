@@ -1,49 +1,64 @@
 import React from 'react';
-import { Container, Typography, List, ListItem, ListItemIcon, ListItemText, Divider, makeStyles } from '@mui/material';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Box, IconButton } from '@mui/material';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    marginTop: theme.spacing(8),
-  },
-  listItem: {
-    alignItems: 'flex-start',
-    padding: theme.spacing(2),
-  },
-}));
+const SocialMediaButtons = () => {
+    return (
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, marginTop: '20px' }}>
+            <IconButton
+                component="a"
+                href="https://www.linkedin.com/in/vaishnavi-iyer2002/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                    backgroundColor: 'white',
+                    '&:hover': {
+                        backgroundColor: 'lightblue',
+                    },
+                    color: 'blue',
+                    borderRadius: '50%',
+                    padding: 1,
+                }}
+            >
+                <FaLinkedin style={{ fontSize: '1.5em' }} />
+            </IconButton>
 
-const Contacts = () => {
-  const classes = useStyles();
+            <IconButton
+                component="a"
+                href="mailto:iyer94@purdue.edu"
+                sx={{
+                    backgroundColor: 'white',
+                    '&:hover': {
+                        backgroundColor: 'lightgreen',
+                    },
+                    color: 'green',
+                    borderRadius: '50%',
+                    padding: 1,
+                }}
+            >
+                <MdEmail style={{ fontSize: '1.5em' }} />
+            </IconButton>
 
-  return (
-    <Container maxWidth="md" className={classes.root}>
-      <Typography variant="h2" gutterBottom>Contact Us</Typography>
-      <List>
-        <ListItem className={classes.listItem}>
-          <ListItemIcon>
-            <EmailIcon />
-          </ListItemIcon>
-          <ListItemText primary="Email" secondary="example@example.com" />
-        </ListItem>
-        <Divider />
-        <ListItem className={classes.listItem}>
-          <ListItemIcon>
-            <PhoneIcon />
-          </ListItemIcon>
-          <ListItemText primary="Phone" secondary="+1234567890" />
-        </ListItem>
-        <Divider />
-        <ListItem className={classes.listItem}>
-          <ListItemIcon>
-            <LocationOnIcon />
-          </ListItemIcon>
-          <ListItemText primary="Address" secondary="123 Main Street, City, Country" />
-        </ListItem>
-      </List>
-    </Container>
-  );
+            <IconButton
+                component="a"
+                href="https://github.com/VeaParz75"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                    backgroundColor: 'white',
+                    '&:hover': {
+                        backgroundColor: 'lightgray',
+                    },
+                    color: 'black',
+                    borderRadius: '50%',
+                    padding: 1,
+                }}
+            >
+                <FaGithub style={{ fontSize: '1.5em' }} />
+            </IconButton>
+        </Box>
+    );
 };
 
-export default Contacts;
+export default SocialMediaButtons;

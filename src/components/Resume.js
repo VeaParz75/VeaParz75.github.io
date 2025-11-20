@@ -1,20 +1,62 @@
 import React from "react";
-import { Container, Typography, Divider, List, ListItem, ListItemText } from '@mui/material';
+import { Container, Typography, Divider, List, ListItem, ListItemText, Button } from '@mui/material';
+import SaturnButton from "./SaturnButton";
 
 const Resume = () => {
+
+  // to download my resume on click a button
+  const onButtonClick = () => {
+    // Path to the resume file in the public directory
+    const fileURL = `${process.env.PUBLIC_URL}/Resume-Vaishnavi_Iyer.pdf`;
+
+    // Create a new anchor element
+    const alink = document.createElement("a");
+    alink.href = fileURL;
+    alink.download = "Resume-Vaishnavi_Iyer.pdf"; // The file name for the download
+    alink.click();
+  };
+
+
   return (
-    <Container maxWidth="md" sx={{ mt: 8 }}>
+    <Container maxWidth="md" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" gutterBottom>
         Vaishnavi Iyer
       </Typography>
       <Typography variant="subtitle1" gutterBottom>
-        Undergraduate Research Assistant
+        Incoming Ph.D Student | PI: Dr. Alexandra Boltasseva
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Email: iyer94@purdue.edu | Smyrna, Atlanta 30080
+        Email: iyer94@purdue.edu | Smyrna, Georgia 30080
       </Typography>
-      <Divider sx={{ mt: 4, mb: 2 }} />
+      <Divider sx={{ mt: 4, mb: 2 }} /> 
       <Typography variant="h5" gutterBottom>
+        Education
+      </Typography>
+      <Typography variant="h6">
+        Purdue University
+      </Typography>
+      <List>
+      <ListItem disablePadding>
+          <ListItemText
+            primary="Incoming Research Assistant: Elmore Family School of Electrical and Computer Engineering Direct Ph.D Program\n
+            PI: Dr. Alexandra Boltasseva"
+            secondary="2024 - Present"
+          />
+        </ListItem>
+      <ListItem disablePadding>
+          <ListItemText
+            primary="Bachelor of Science: Computer Science, Specialization: Machine Intelligence"
+            secondary="2020-2024"
+          />
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemText
+            primary="Bachelor of Arts: Political Science, Specialization: International Relations"
+            secondary="2020-2024"
+          />
+        </ListItem>
+      </List>
+      <Typography variant="h6" gutterBottom>
         Skills
       </Typography>
       <Typography variant="body1" gutterBottom>
@@ -68,6 +110,7 @@ const Resume = () => {
         <ListItemText
             primary={
                 <div>
+                - Iyer, V; Bezick, M. Wilson, B; Boltasseva, A. Applications of Variational Neural Annealing for Machine Learning-Assisted Topological Optimization. Spring Undergraduate Research Conference (2024)<br />
                 - Wilson, B., Iyer, V., Shalaev, V., Kildishev, A., Kais, S., Boltasseva, A. Learning Van der Waals Potentials in Surrogate Rydberg Hamiltonians. 3rd Annual Quantum Summer School (2023)<br />
                 - Iyer, V., Bonilla Garay, B., Figueroa, M.. (2023, August 11). A General Framework for generating Realistic Quantum Backends. Quantum Science at Purdue Poster Session (2023).<br />
                 - Iyer, V. Verification of Single Photon Sources through Latent Variables of Spectral Broadening. Summer Undergraduate Research Fellowship Quantum Technologies Symposium. (2022)<br />
@@ -136,6 +179,17 @@ const Resume = () => {
             />
         </ListItem>
       </List>
+      <Divider sx={{ mt: 2, mb: 2 }} />
+      <div style={{ textAlign: 'right', marginTop: '20px' }}>
+        <Button 
+            onClick={onButtonClick}
+            variant="contained"
+            color="primary"
+            sx={{ fontFamily: 'Montserrat, sans-serif' }}
+        >
+            Download Resume
+        </Button>
+      </div>
     </Container>
   );
 };

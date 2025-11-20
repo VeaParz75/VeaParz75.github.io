@@ -1,0 +1,21 @@
+.text-rotator {
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.rotating-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    font-size: 24px; /* Increase font size */
+    font-weight: 600; /* Make the font bold */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.rotating-text.animating {
+    transform: translateY(-100%);
+}

@@ -1,0 +1,32 @@
+.saturn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f0ab45;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: saturnAnimation 1s ease-out forwards;
+}
+
+.saturn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 5px;
+    background-color: rgba(254, 169, 51, 0.8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes saturnAnimation {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}

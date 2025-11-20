@@ -1,0 +1,63 @@
+[
+
+    {
+        "title": "Dramatic Tree",
+        "source": "Art Class: Art with Flo",
+        "imageName": "yippee.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Watercolour Sidewalk",
+        "source": "Art Class: Art with Flo",
+        "imageName": "watercolour.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Realistic Eye",
+        "source": "Art Class: Art with Flo",
+        "imageName": "mei.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "River Scenery",
+        "source": "Art Class: Art with Flo",
+        "imageName": "she_is_back.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "To Mount Lanayru",
+        "source": "Art Class: Art with Flo + The Legend of Zelda Inspiration",
+        "imageName": "to_lanayru.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Bootleg Starry Night",
+        "source": "Art Class: Art with Flo",
+        "imageName": "starry_night.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Hobie",
+        "source": "Inspired by Spiderman: Across the Spiderverse",
+        "imageName": "hobie.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Angry Megumi",
+        "source": "Inspired by the Jujutsu Kaisen anime",
+        "imageName": "angry_gumi.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Violet",
+        "source": "Inspired by the Violet Evergarden anime",
+        "imageName": "violet.webp",
+        "category": "landscape"
+    },
+    {
+        "title": "Waiting For Somethign to Happen?",
+        "source": "Inspired by OMORI",
+        "imageName": "happen.webp",
+        "category": "landscape"
+    }
+]

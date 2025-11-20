@@ -1,9 +1,66 @@
 .intro-text {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    opacity: 1;
   }
   
   .fade-in {
     opacity: 1;
   }
   
+  @keyframes colorChange {
+    0% { color: #a03747; }  /* Pastel Pink */
+    20% { color: #3c47ab; } /* Pastel Blue */
+    40% { color: #33a44d; } /* Pastel Green */
+    60% { color: #a89d3a; } /* Pastel Yellow */
+    80% { color: #a236a2; } /* Pastel Purple */
+    100% { color: #a03747; } /* Back to Pastel Pink */
+  }
+
+/* Apply the animation to the text */
+.color-changing {
+  animation: colorChange 6s ease-in-out infinite;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.resume-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1em; 
+  padding: 10px 20px;
+  color: rgb(12, 200, 200);
+  border-radius: 8px; 
+  margin-top: 20px; 
+}
+
+@keyframes otherColorChange {
+  0% { color: #c84d5f; }  /* Pastel Pink */
+  20% { color: #2225aa; } /* Pastel Blue */
+  40% { color: #9677e4; } /* Pastel Green */
+  60% { color: #be54ab; } /* Pastel Yellow */
+  80% { color: #2225aa; } /* Pastel Purple */
+  100% { color: #c84d5f; } /* Back to Pastel Pink */
+}
+
+.other-color-changing {
+  animation: otherColorChange 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in animation */
+.fade-in-button {
+  animation: fadeIn 1s ease-in-out; /* Adjust duration and easing as needed */
+}

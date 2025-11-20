@@ -1,0 +1,50 @@
+[
+    {
+        "title": "A Distinguished Gentleman",
+        "imageName": "distinguished_sir.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Cat Beanie",
+        "imageName": "kitty_hat.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Chrome Dino: HTF Edition",
+        "imageName": "dino.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Technically 75% of a Sweater If You Think About It",
+        "imageName": "sweater.webp",
+        "category": "crochet"
+    },
+    
+    {
+        "title": "Bunnies",
+        "imageName": "bunnies.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Jiji from Kiki's Delivery Service",
+        "imageName": "jiji.webp",
+        "category": "crochet"
+    },
+    
+    {
+        "title": "Bag v1.0",
+        "imageName": "me_w_bag.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Bouquet of Flowers",
+        "imageName": "flowers.webp",
+        "category": "crochet"
+    },
+    {
+        "title": "Bag v2.0",
+        "imageName": "bag.webp",
+        "category": "crochet"
+    }
+    
+]
