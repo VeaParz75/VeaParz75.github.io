@@ -23,7 +23,7 @@ const TotallyNotSomething = () => {
         <p>This is a record of every single one of the 52 plushies I own</p>
         <p>Yes.</p>
         <p>You read that right.</p>
-        <p>a million. Plushies.</p>
+        <p>52. Plushies.</p>
         <p>this is how i choose to spend my money</p>
         <p>it could've been something worse if you ask me idk</p>
         <br></br>

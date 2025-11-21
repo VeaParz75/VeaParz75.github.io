@@ -22,7 +22,9 @@ import TextRotator from './helpers/TextRotator';
 import about from '../assets/about.png';
 import education from '../assets/education.png';
 import experience from '../assets/experience.png';
+import research from '../assets/research.png';
 import recognitions from '../assets/recognitions.png';
+import hobbies from '../assets/hobbies.png';
 
 export default function DesktopWindows() {
   const theme = useTheme();
@@ -235,7 +237,6 @@ export default function DesktopWindows() {
         </button>
         {/* Research */}
         <button
-          className="px-4 py-2 bg-purple-600 text-white rounded"
           onClick={() => {
             if (!windows.some((w) => w.id === "research")) {
               setWindows((prev) => [
@@ -245,7 +246,15 @@ export default function DesktopWindows() {
             }
           }}
         >
-          Research
+          <img
+            src={research}
+            alt="Research button"
+            style={{
+              width: "130px",   // adjust as needed
+              height: "auto",
+              display: "block",
+            }}
+          />
         </button>
         {/* Affiliations */}
         <button
@@ -276,7 +285,6 @@ export default function DesktopWindows() {
         </button>
         {/* hobbies */}
         <button
-          className="px-4 py-2 bg-purple-600 text-white rounded"
           onClick={() => {
             if (!windows.some((w) => w.id === "hobbies")) {
               setWindows((prev) => [
@@ -286,7 +294,15 @@ export default function DesktopWindows() {
             }
           }}
         >
-          Hobbies
+          <img
+            src={hobbies}
+            alt="Hobbies button"
+            style={{
+              width: "130px",   // adjust as needed
+              height: "auto",
+              display: "block",
+            }}
+          />
         </button>
       </div>
 
