@@ -48,7 +48,7 @@ const Affiliations = () => {
       >
         {[
           {
-            title: "Treasurer",
+            title: "SPIE Purdue Student Chapter: Treasurer",
             description: <>January 2025 - Present</>,
             image: "spie.png",
             textStyle: {
@@ -62,7 +62,7 @@ const Affiliations = () => {
             desc: "I am serving as the Treasurer for the SPIE Purdue University Student Chapter, where I manage our organization's finances, acquire funding, and host distinguished faculty from institutes like NIST, Oxford, Max Planck, and Technion."
           },
           {
-            title: "Lead Student Volunteer",
+            title: "Qubit x Qubit and Southport High School: Lead Student Volunteer",
             description: <>April 2024</>,
             image: "southport.jpg",
             mediaBackgroundColor: '#f5f5f5', // Default background for image area
@@ -71,16 +71,16 @@ const Affiliations = () => {
             desc: "I was a lead student volunteer for a collaboration between the Purdue Quantum Science Engineering Institute and Qubit X Qubit, where we introduced quantum computing to high school students at Southport High School in Indianapolis, Indiana."
           },
           {
-            title: "Lead Organizer and Instructor",
+            title: "Qiskit Fall Fest at Purdue: Lead Organizer and Instructor",
             description: <>September 2023 - November 2023</>,
             image: "qff.png",
             mediaBackgroundColor: '#f5f5f5', // Default background for image area
             textColor: '#3f3f3f', // Default text color
             cardBackgroundColor: '#f7d9ff',
-            desc: "I organized Purdue's first Qiskit Fall Fest in collaboration with IBM, Qiskit, and the Quantum Science Center. My team and I raised $3000 to bring quantum computing to undergraduates at Purdue. Our event also included speakers from IBM, SPEEZ2ZERO, QuEra, and Qubit X Qubit."
+            desc: "I organized Purdue's first Qiskit Fall Fest in collaboration with IBM, Qiskit, and the Quantum Science Center. My team and I raised $3000 to bring quantum computing to undergraduates at Purdue. Our event also included speakers from IBM, SPEED2ZERO, QuEra, and Qubit X Qubit."
           },
           {
-            title: "Vice President",
+            title: "Hack the Future: Vice President",
             description: <>August 2020 - May 2024</>,
             image: "dino.png",
             mediaBackgroundColor: '#f5f5f5', // Default background for image area

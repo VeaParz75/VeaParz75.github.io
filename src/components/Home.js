@@ -47,6 +47,31 @@ export default function DesktopWindows() {
     });
   };
 
+  const trigger_clicks = 10
+  const junimo_gif = "./loading_gifs/Junimo.gif"
+  const [clickCount, setClickCount] = useState(0);
+  const [showGif, setShowGif] = useState(false);
+
+  const handleEasterEggClick = () => {
+    // trying the easter egg with my name
+    // makes junimos appear like the stardew home screen
+
+    // 1. Increment the click count
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+
+    // 2. Check if the count hits the target and the GIF is not already showing
+    if (newCount >= trigger_clicks && !showGif) {
+      setShowGif(true);
+      console.log("GIF Easter Egg unlocked!");
+    } else if (showGif) {
+      // Optional: Reset or hide the GIF if clicked again (or do nothing)
+      console.log("GIF is already visible.");
+    } else {
+        console.log(`Click progress: ${newCount}/${trigger_clicks}`);
+    }
+  };
+
   const closeWindow = (id) => {
     setWindows((prev) => prev.filter((w) => w.id !== id));
   };
@@ -121,6 +146,14 @@ export default function DesktopWindows() {
         >
           🪐
         </button>
+
+         {showGif && (
+          <img
+            src={junimo_gif}
+            alt="Secret Easter Egg"
+            className="easter-egg-gif"
+          />
+        )}
       </Box> 
       <Box sx={{ position: 'relative', marginTop: '75px', padding: '50px 75px', paddingBottom: '30px', backgroundColor: 'white', color: theme.palette.common.white, border: '3px solid black', borderRadius: '17px', borderColor: 'black', fontFamily: 'Nunito, sans-serif', fontWeight: 700 }}>
           <Typography
@@ -134,10 +167,18 @@ export default function DesktopWindows() {
         }}
         className="intro-text color-changing"
       >
-        Hi! I'm Vea. It's nice to meet you!
+        <span>
+          Hi! I'm{" "}
+          <span
+            onClick={handleEasterEggClick}
+            style={{ cursor: 'pointer' }}
+          >
+            Vea
+          </span>
+          . It's nice to meet you!
+        </span>
       </Typography>
 
-      
       </Box>
       </Box>
       
@@ -378,7 +419,7 @@ export default function DesktopWindows() {
         );
       })}
 
-      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px', marginBottom: '5px', color: theme.palette.common.black}} variant="h6" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>
+      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '15px', marginBottom: '5px', color: theme.palette.common.black}} variant="h6" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>
         You can reach out to me via LinkedIn or email, or check out my GitHub:
       </Typography>
       

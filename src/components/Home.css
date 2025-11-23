@@ -51,6 +51,34 @@
   animation: otherColorChange 6s ease-in-out infinite;
 }
 
+.easter-egg-gif {
+  /* Positioning: Put it somewhere fun, like top right */
+  position: absolute;
+  top: -45px;
+  right: 850px;
+  
+  /* Size: Adjust the size as needed */
+  width: 45px; 
+  height: auto;
+  
+  /* Fade-In Effect */
+  animation: fadeInGIF 1s ease-in forwards;
+  opacity: 0; /* Start invisible */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+/* The actual animation keyframes */
+@keyframes fadeInGIF {
+  from {
+    opacity: 0;
+    transform: scale(0.9); /* Optional: slight zoom effect */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
