@@ -19,6 +19,7 @@ import Affiliations from './Affiliations';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import TextRotator from './helpers/TextRotator';
+import ThemeSwitcher from './helpers/ThemeSwitcher';
 import about from '../assets/about.png';
 import education from '../assets/education.png';
 import experience from '../assets/experience.png';
@@ -77,7 +78,7 @@ export default function DesktopWindows() {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-blue-300 to-blue-100 overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden themed-site-bg">
       <div
         style={{
           display: 'flex',
@@ -155,7 +156,7 @@ export default function DesktopWindows() {
           />
         )}
       </Box> 
-      <Box sx={{ position: 'relative', marginTop: '75px', padding: '50px 75px', paddingBottom: '30px', backgroundColor: 'white', color: theme.palette.common.white, border: '3px solid black', borderRadius: '17px', borderColor: 'black', fontFamily: 'Nunito, sans-serif', fontWeight: 700 }}>
+      <Box className='themed-box-bg' sx={{ position: 'relative', marginTop: '75px', padding: '70px 75px', paddingBottom: '30px', color: theme.palette.common.white, border: '3px solid black', borderRadius: '17px', borderColor: 'black', fontFamily: 'Nunito, sans-serif', fontWeight: 700 }}>
           <Typography
         variant="h2"
         gutterBottom
@@ -179,12 +180,7 @@ export default function DesktopWindows() {
         </span>
       </Typography>
 
-      </Box>
-      </Box>
-      
-    </div>
-
-    <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px', marginBottom: '3px', color: '#003046'}} variant="h4" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Nunito, sans-serif', fontWeight: 600 }}>
+      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px', marginBottom: '3px', color: '#003046'}} variant="h4" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Nunito, sans-serif', fontWeight: 600 }}>
           I'm passionate about:
     </Typography>
 
@@ -346,8 +342,15 @@ export default function DesktopWindows() {
           />
         </button>
       </div>
+      
+        <ThemeSwitcher />
 
-      {windows.map((win) => {
+      </Box>
+      </Box>
+      
+    </div>
+
+    {windows.map((win) => {
 
         // my strat here is to custom set height and width so it can change based on content
         // like about may need to be longer and 800 by 570 might not be enough. plus i'd want it to span
@@ -375,7 +378,7 @@ export default function DesktopWindows() {
               className="border-2 bg-white rounded-xl"
             >
               <div
-                className="bg-gray-800 text-white p-3 drag-handle flex justify-between items-center rounded-t-xl font-mono text-sm"
+                className="themed-header-bg text-white p-3 drag-handle flex justify-between items-center rounded-t-xl font-mono text-sm"
                 onMouseDown={() => bringToFront(win.id)}
               >
                 <span>
@@ -419,9 +422,11 @@ export default function DesktopWindows() {
         );
       })}
 
-      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '15px', marginBottom: '5px', color: theme.palette.common.black}} variant="h6" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>
+      {/* <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '15px', marginBottom: '5px', color: theme.palette.common.black}} variant="h6" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>
         You can reach out to me via LinkedIn or email, or check out my GitHub:
-      </Typography>
+      </Typography> */}
+
+      {/* hopefully does theming switch?? */}
       
       <Contact />
 

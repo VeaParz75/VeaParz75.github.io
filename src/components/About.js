@@ -66,7 +66,7 @@ export default function AboutContent({ scrollToApod }) {
                     color: '#00a7cc',
                     fontFamily: 'Nunito',
                     marginBottom: '30px',
-                    fontWeight: 500,
+                    fontWeight: 700,
                     textAlign: 'left',
                     transform: 'translateY(15px)'
                     }}
@@ -79,7 +79,7 @@ export default function AboutContent({ scrollToApod }) {
                     variant="h6"
                     sx={{
                     fontFamily: 'Nunito',
-                    fontWeight: 700,
+                    fontWeight: 500,
                     color: 'black',
                     marginBottom: '5px',
                     maxWidth: 450,
@@ -93,6 +93,7 @@ export default function AboutContent({ scrollToApod }) {
                     variant="h6"
                     sx={{
                     fontFamily: 'Nunito',
+                    fontWeight: 500,
                     color: 'gray',
                     maxWidth: 500,
                     textAlign: 'left',
@@ -108,22 +109,22 @@ export default function AboutContent({ scrollToApod }) {
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
     <Typography
-        variant="h6"
+        variant="body1"
         sx={{
         fontFamily: 'Nunito',
         fontSize: '14pt',
         fontWeight: 300,
-        color: 'black',
+        marginTop: '10px',
         maxWidth: 700,
         textAlign: 'left',
         transform: 'translateY(0px)',
         }}
     >
-        Hi! My name is Vea (pronounced Vee-ya) and I'm a <bluetext>researcher, developer, and artist</bluetext> at Purdue University.
+        Hi! My name is Vea (pronounced Vee-ya) and I'm a <bluetext>researcher, developer, and artist</bluetext> at Purdue University. <br></br>
     </Typography>
 
     <Typography
-        variant="h6"
+        variant="body1"
         sx={{
         fontFamily: 'Nunito',
         fontSize: '14pt',

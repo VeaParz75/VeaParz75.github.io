@@ -37,7 +37,7 @@ function PaperCard({ title, figure, summary, isOpen, onToggle, paperLink, skills
         )}
         
         <div
-          className={`mt-3 text-sm text-gray-700 transition-max-height duration-300 ease-in-out`}
+          className={`mt-3 text-sm text-gray-700 transition-max-height duration-300 ease-in-out research-body-text`}
           style={{
             maxHeight: isOpen ? "500px" : "0px",
             overflow: "hidden",

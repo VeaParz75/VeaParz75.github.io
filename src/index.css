@@ -2,12 +2,43 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* * {
+  font-family: 'acnh_font' !important;
+} */
+
+/* attempting to get the acnh font? */
+@font-face {
+  font-family: 'acnh_font';
+  src: url('./assets/fonts/FOT-Seurat_Pro_L.otf'); /* Make sure filename is exact */
+  font-weight: 300; /* This tells the browser: "Use this file when I ask for Light text" */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'acnh_font';
+  src: url('./assets/fonts/FOT-Seurat_Pro_M.otf'); 
+  font-weight: 500; /* This tells the browser: "Use this file when I ask for Bold text" */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'acnh_font';
+  src: url('./assets/fonts/FOT-Seurat_Pro_B.otf'); 
+  font-weight: 700; /* This tells the browser: "Use this file when I ask for Bold text" */
+  font-style: normal;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  --site-font: 'Nunito', sans-serif; 
+  --text-color: black;
+  font-family: var(--site-font);
   @apply text-lg
+  
 }
 
 .projects img {
@@ -31,6 +62,95 @@ body {
   color: #7477FF;
 }
 
+:root {
+  /* Default Theme (matches base theme) */
+  --header-bg: #1f2937; 
+  --header-text: #ffffff;
+  --border-color: #e5e7eb;
+  --content-bg: #ffffff;
+  --site-bg: #a5f3fc;
+  --box-bg: #ffffff;
+  --site-font: sans-serif;
+}
+
+/* animal crossing */
+[data-theme="acnh"] {
+  --header-bg: #86efac;
+  --box-bg: #d1fae5;
+  --header-text: #7c4a10; 
+  --site-bg: url('./assets/ac_bg2.png');
+  --site-font: 'acnh_font', monospace;
+}
+
+/* current nuclear option to switch fonts
+ basically every MUI element acts as a standard HTML header
+ so just add all headers used here and for other fonts as well */
+
+
+
+[data-theme="acnh"] h2,
+[data-theme="acnh"] h3 {
+  font-family: 'acnh_font', monospace !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="acnh"] h4,
+[data-theme="acnh"] h5,
+[data-theme="acnh"] .MuiTypography-h5,
+[data-theme="acnh"] h6,
+[data-theme="acnh"] h6 * {
+  font-family: 'acnh_font', monospace !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="acnh"] .MuiTypography-body1,
+[data-theme="acnh"] .MuiTypography-body2,
+[data-theme="acnh"] .research-body-text {
+  font-family: 'acnh_font', monospace !important;
+  font-weight: 300 !important;
+  font-size: 16px;
+}
+
+/* Theme: Barbie */
+[data-theme="barbie"] {
+  --header-bg: #ff69b4; 
+  --header-text: #ffffff;
+  --border-color: #ffcce3;
+  --content-bg: #fff0f5; 
+}
+
+/* 3. YOUR HELPER CLASSES */
+
+.themed-header-bg {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* background */
+.themed-site-bg {
+  background: var(--site-bg);
+  background-size: cover;     /* Ensures images cover the screen */
+  background-position: center;
+  background-attachment: fixed; /* Keeps bg still while scrolling */
+  transition: background 0.5s ease;
+}
+
+/* box background */
+.themed-box-bg {
+  background-color: var(--box-bg);
+  background-size: cover;     /* Ensures images cover the screen */
+  background-position: center;
+  background-attachment: fixed; /* Keeps bg still while scrolling */
+}
+
+.themed-border {
+  border-color: var(--border-color);
+}
+
+.themed-content-bg {
+  background-color: var(--content-bg);
+}
 
 nav li a {
   @apply px-4 py-5 text-lg;
