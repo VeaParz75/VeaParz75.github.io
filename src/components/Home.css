@@ -67,6 +67,40 @@
   z-index: 1; /* Ensure it's above other content */
 }
 
+/* button zoom in */
+.desktop-icon-image {
+  /* Set base size and add a transition for smooth animation */
+  width: 85px; 
+  height: auto;
+  display: block;
+  /* Smoothly transition any changes to transform (zoom) and filter (shadow) */
+  transition: transform 0.15s ease-out, filter 0.15s ease-out;
+}
+
+/* --- 1. HOVER EFFECT (Slight Zoom In) --- */
+.desktop-icon-image:hover {
+  /* Scale up by 5% */
+  transform: scale(1.05); 
+}
+
+/* --- 2. ACTIVE EFFECT (Click/Shrink) --- */
+/* :active applies when the button is being pressed down */
+.desktop-icon-button:active .desktop-icon-image {
+  /* Scale down by 10% */
+  transform: scale(0.90); 
+  transition-duration: 0.05s; /* Make the shrink immediate */
+}
+
+/* --- Base Button Styles (Reset) --- */
+.desktop-icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  /* Important: Prevent the image's transition from affecting its position */
+  line-height: 0; 
+}
+
 /* The actual animation keyframes */
 @keyframes fadeInGIF {
   from {

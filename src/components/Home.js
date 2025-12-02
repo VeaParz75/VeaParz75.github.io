@@ -201,6 +201,7 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
           style={{
             background: "none",
             border: "none",
@@ -210,6 +211,7 @@ export default function DesktopWindows() {
         >
           <img
             src={about}
+            className="desktop-icon-image"
             alt="About button"
             style={{
               width: "85px",   // adjust as needed
@@ -228,6 +230,7 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
           style={{
             background: "none",
             border: "none",
@@ -237,6 +240,7 @@ export default function DesktopWindows() {
         >
           <img
             src={education}
+            className="desktop-icon-image"
             alt="Education button"
             style={{
               width: "127px",   // adjust as needed
@@ -255,6 +259,7 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
           style={{
             background: "none",
             border: "none",
@@ -264,6 +269,7 @@ export default function DesktopWindows() {
         >
           <img
             src={experience}
+            className="desktop-icon-image"
             alt="Experience button"
             style={{
               width: "130px",   // adjust as needed
@@ -282,9 +288,11 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
         >
           <img
             src={research}
+            className="desktop-icon-image"
             alt="Research button"
             style={{
               width: "130px",   // adjust as needed
@@ -303,6 +311,7 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
           style={{
             background: "none",
             border: "none",
@@ -312,6 +321,7 @@ export default function DesktopWindows() {
         >
           <img
             src={recognitions}
+            className="desktop-icon-image"
             alt="Affiliations button"
             style={{
               width: "127px",   // adjust as needed
@@ -330,9 +340,11 @@ export default function DesktopWindows() {
               ]);
             }
           }}
+          className="desktop-icon-button"
         >
           <img
             src={hobbies}
+            className="desktop-icon-image"
             alt="Hobbies button"
             style={{
               width: "130px",   // adjust as needed
