@@ -7,7 +7,8 @@
 // do NOT terminate run just login and be patient until it says 'Published' */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Box, Typography, Button, useTheme } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Box, Typography, Button, useTheme, Modal } from '@mui/material';
 import Tooltip from '@mui/material/Tooltip';
 import Draggable from "react-draggable";
 import Apod from "./Apod";
@@ -77,6 +78,24 @@ export default function DesktopWindows() {
     setWindows((prev) => prev.filter((w) => w.id !== id));
   };
 
+  // mobile toast warning (apparently that is what the warning message is called)
+  // Checks if screen is smaller than 'md' (approx tablet/phone width)
+  const isMobile = useMediaQuery(theme.breakpoints.down('md')); 
+  
+  // State to control if the warning is visible
+  const [mobileWarningOpen, setMobileWarningOpen] = useState(false);
+
+  // When the component loads, check if it's mobile. If yes, open the warning.
+  useEffect(() => {
+    if (isMobile) {
+      setMobileWarningOpen(true);
+    }
+  }, [isMobile]);
+
+  const handleCloseWarning = () => {
+    setMobileWarningOpen(false);
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden themed-site-bg">
       <div
@@ -87,12 +106,12 @@ export default function DesktopWindows() {
           position: 'relative',      // to contain absolute children if needed
         }}
       >
-      <Box sx={{ position: 'relative', display: 'inline-block', marginTop: '40px' }}>
+      <Box sx={{ position: 'relative', width: '100%', maxWidth: '1100px' }}>
       {/* Header/Bezel */}
       <Box
         sx={{
           position: 'absolute',
-          top: '75px',
+          top: { xs: '55px', md: '75px' },
           left: '0px',
           width: 'calc(100% + 0px)', // or a fixed width if needed
           backgroundColor: '#1F2937',
@@ -156,7 +175,7 @@ export default function DesktopWindows() {
           />
         )}
       </Box> 
-      <Box className='themed-box-bg' sx={{ position: 'relative', marginTop: '75px', padding: '70px 75px', paddingBottom: '30px', color: theme.palette.common.white, border: '3px solid black', borderRadius: '17px', borderColor: 'black', fontFamily: 'Nunito, sans-serif', fontWeight: 700 }}>
+      <Box className='themed-box-bg' sx={{ position: 'relative', marginTop: { xs: '55px', md: '75px' }, padding: { xs: '40px 20px', md: '65px 75px' }, paddingBottom: '0px', color: theme.palette.common.white, border: '3px solid black', borderRadius: '17px', borderColor: 'black', fontFamily: 'Nunito, sans-serif', fontWeight: 700 }}>
           <Typography
         variant="h2"
         gutterBottom
@@ -164,7 +183,10 @@ export default function DesktopWindows() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          fontFamily: 'Nunito, sans-serif', fontWeight: 700 
+          fontFamily: 'Nunito, sans-serif', fontWeight: 700,
+          fontSize: { xs: '2rem', sm: '3rem', md: '3.75rem' },
+          textAlign: 'center',
+          flexWrap: 'wrap'
         }}
         className="intro-text color-changing"
       >
@@ -180,7 +202,7 @@ export default function DesktopWindows() {
         </span>
       </Typography>
 
-      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px', marginBottom: '3px', color: '#003046'}} variant="h4" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Nunito, sans-serif', fontWeight: 600 }}>
+      <Typography sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: '40px', marginBottom: '3px', color: '#003046'}} variant="h4" gutterBottom className={isVisible ? 'fade-in intro-text' : 'intro-text'} style={{ fontFamily: 'Nunito, sans-serif', fontWeight: 600 }}>
           I'm passionate about:
     </Typography>
 
@@ -190,7 +212,7 @@ export default function DesktopWindows() {
          className="intro-text other-color-changing"
      />
 
-      <div className="flex gap-6 p-4 justify-center">
+      <div className="flex flex-wrap gap-6 p-4 justify-center w-full max-w-5xl mx-auto">
         {/* about */}
         <button
           onClick={() => {
@@ -441,6 +463,72 @@ export default function DesktopWindows() {
       {/* hopefully does theming switch?? */}
       
       <Contact />
+
+      {/* MOBILE WARNING MODAL */}
+      <Modal
+        open={mobileWarningOpen}
+        onClose={handleCloseWarning}
+        aria-labelledby="mobile-warning-title"
+        aria-describedby="mobile-warning-description"
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backdropFilter: 'blur(5px)', // Blurs the background site slightly
+        }}
+      >
+        <Box
+          sx={{
+            backgroundColor: '#1F2937', // Matches your bezel color
+            border: '2px solid white',
+            borderRadius: '12px',
+            boxShadow: 24,
+            padding: '30px',
+            maxWidth: '90%',
+            width: '400px',
+            textAlign: 'center',
+            color: 'white',
+            outline: 'none',
+            fontFamily: 'Nunito, sans-serif',
+          }}
+        >
+          {/* Warning Icon/Emoji */}
+          <Typography variant="h2" sx={{ marginBottom: '15px' }}>
+            📱⚠️
+          </Typography>
+
+          <Typography 
+            id="mobile-warning-title" 
+            variant="h6" 
+            component="h2" 
+            sx={{ fontWeight: 'bold', fontFamily: 'Courier', marginBottom: '10px' }}
+          >
+            System.Warning
+          </Typography>
+
+          <Typography id="mobile-warning-description" sx={{ marginBottom: '25px', lineHeight: 1.6 }}>
+            Hey! Looks like you're accessing my website on a mobile device. <br/>
+            This site is designed as a desktop OS experience, so some features might look a bit odd on a small screen.
+          </Typography>
+
+          <Button 
+            onClick={handleCloseWarning}
+            variant="contained"
+            sx={{
+              backgroundColor: 'white',
+              color: '#1F2937',
+              fontWeight: 'bold',
+              fontFamily: 'Courier',
+              textTransform: 'none',
+              '&:hover': {
+                backgroundColor: '#e0e0e0',
+              }
+            }}
+          >
+            Okay, proceed anyway
+          </Button>
+        </Box>
+      </Modal>
 
     </div>
   );

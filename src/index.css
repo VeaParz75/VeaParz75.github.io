@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  --site-font: 'Nunito', sans-serif; 
+  --site-font: 'Montserrat', sans-serif; 
   --text-color: black;
   font-family: var(--site-font);
   @apply text-lg
@@ -111,12 +111,20 @@ body {
   font-size: 16px;
 }
 
-/* Theme: Barbie */
-[data-theme="barbie"] {
-  --header-bg: #ff69b4; 
-  --header-text: #ffffff;
-  --border-color: #ffcce3;
-  --content-bg: #fff0f5; 
+/* Theme: UTDR*/
+[data-theme="utdr"] {
+  --header-bg: #19ffff;
+  --box-bg: #d6fcff; 
+  --header-text: #000000;
+  --site-bg: #000000;
+  --site-font: "Jersey 10", sans-serif !important;
+}
+
+[data-theme="utdr"] h2 {
+  font-family: "Jersey 10", sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  font-size: 72px;
 }
 
 /* 3. YOUR HELPER CLASSES */
