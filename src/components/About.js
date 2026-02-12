@@ -1,8 +1,5 @@
-
-
-import React from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { Box, Typography, Button, useTheme } from '@mui/material';
 import english from "../assets/english.png";
 import hindi from "../assets/hindi-tamil.png";
@@ -13,12 +10,11 @@ import Pill from "./helpers/Pill";
 import './Home.css';
 import './About.css';
 import me from "../assets/its_me_again.webp"
-import { GoGoal } from "react-icons/go";
 
 export default function AboutContent({ scrollToApod }) {
 
   const theme = useTheme();
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className="text-sm text-gray-800 leading-relaxed space-y-4">
@@ -143,7 +139,6 @@ export default function AboutContent({ scrollToApod }) {
         variant="h5"
         gutterBottom
         sx={{
-            color: theme.palette.common.black,
             fontFamily: 'Nunito',
             fontSize: '20pt',
             color: '#00a7cc',
@@ -364,61 +359,3 @@ export default function AboutContent({ scrollToApod }) {
   );
 }
 
-{/* <Box sx={{ marginTop: '35px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Tooltip text="Python">
-                <FaPython
-                    style={{ fontSize: '3em', color: 'lightblue', margin: '0 10px' }}
-                    className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                />
-            </Tooltip>
-            <Tooltip text="Java">
-                <FaJava
-                    style={{ fontSize: '3em', color: 'red', margin: '0 10px' }}
-                    className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                />
-            </Tooltip>
-            <Tooltip text="React">
-                <FaReact
-                    style={{ fontSize: '3em', color: 'lightgreen', margin: '0 10px' }}
-                    className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                />
-            </Tooltip>
-            <Tooltip text="Node.js">
-                <FaNodeJs
-                    style={{ fontSize: '3em', color: 'yellow', margin: '0 10px' }}
-                    className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                />
-            </Tooltip>
-            <Tooltip text="Qiskit">
-                <SiQiskit
-                    style={{ fontSize: '3em', color: 'white', margin: '0 10px' }}
-                    className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                />
-            </Tooltip>
-        </Box> */}
-
-      {/* <div className="resume-section">
-            <Typography
-                variant="h5"
-                gutterBottom
-                className={isVisible ? 'fade-in intro-text' : 'intro-text'}
-                sx={{
-                    color: theme.palette.common.white,
-                    fontFamily: 'Montserrat, sans-serif',
-                    fontWeight: 600,
-                    marginBottom: '20px' // Space between text and button
-                }}
-            >
-                You can check out my resume here:
-            </Typography>
-            <Button
-                component={Link}
-                to="/resume"
-                variant="contained" // Material-UI variant
-                color="primary" // You can choose another color from theme if needed
-                href={`${process.env.PUBLIC_URL}/resume`} // Replace with the actual path or URL
-                className={`resume-button fade-in-button`}
-            >
-                View Resume
-            </Button>
-        </div> */}
