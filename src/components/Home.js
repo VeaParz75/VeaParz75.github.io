@@ -104,6 +104,8 @@ export default function DesktopWindows() {
           justifyContent: 'center',  // horizontal center
           alignItems: 'center',      // vertical center
           position: 'relative',      // to contain absolute children if needed
+          paddingLeft: '20px',
+          paddingRight: '20px',
         }}
       >
       <Box sx={{ position: 'relative', width: '100%', maxWidth: '1100px' }}>

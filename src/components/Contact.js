@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 
 const SocialMediaButtons = () => {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, marginTop: '20px' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, marginTop: '20px', marginBottom: '10px' }}>
             <IconButton
                 component="a"
                 href="https://www.linkedin.com/in/vaishnavi-iyer2002/"

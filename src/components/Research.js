@@ -15,7 +15,7 @@ export default function Research() {
   const papers = [
     {
       title: `Deep Learning in Photonic Device Development: Nuances and Opportunities<br>
-              <b>Accepted for publication to <em>npj Nanophotonics</em></b><br>`,
+              <b>Published in <em>npj Nanophotonics</em></b><br>`,
       figure: persp,
       summary: `Can deep learning shift the paradigm of photonic device development? This perspective highlights the key caveats to using deep learning in designing photonic devices and sketches a realistic picture of where it could meaningfully contribute in the future.<br><br>
       <b>Key Contributions:</b><br>
@@ -26,7 +26,7 @@ export default function Research() {
       - Coordinated revisions in response to internal feedback and reviewer comments. <br><br>
       - Managed the overall structure, storyline, and final polish of the manuscript.`,
       borderGradient: ['#0007c6ff', '#b600feff'],
-      paperLink: "",
+      paperLink: "https://www.nature.com/articles/s44310-025-00097-y",
       skills: [
       { text: "Deep Learning", bgc: "#c4f4ff", tc: "#006d87" },
       { text: "Photonics", bgc: "#c4f4ff", tc: "#006d87" },
@@ -70,7 +70,7 @@ export default function Research() {
     },
     {
       title: `PearSAN: a Machine Learning Method for Inverse Design using Pearson Correlated Surrogate Annealing<br>
-              <b>Published on <em>arXiV</em></b><br>`,
+              <b>Accepted for publication to <em>Advanced Optical Materials</em></b><br>`,
       figure: main_fig,
       summary: `PearSAN is a generative modelling framework designed to identify how changes in device parameters affect the efficiency of thermophotovoltaic (TPV) cells. By learning correlations between QUBO energy functions and TPV performance metrics, it enables faster and more targeted design optimization.<br><br>
       <b>Key Contributions:</b><br>

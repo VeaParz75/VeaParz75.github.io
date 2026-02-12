@@ -90,24 +90,25 @@ body {
 
 [data-theme="acnh"] h2,
 [data-theme="acnh"] h3 {
-  font-family: 'acnh_font', monospace !important;
+  font-family: "Lilex", monospace !important;
   font-weight: 700 !important;
+  letter-spacing: -1px;
 }
 
-[data-theme="acnh"] h4,
+[data-theme="acnh"] .MuiTypography-h4,
 [data-theme="acnh"] h5,
 [data-theme="acnh"] .MuiTypography-h5,
 [data-theme="acnh"] h6,
 [data-theme="acnh"] h6 * {
-  font-family: 'acnh_font', monospace !important;
+  font-family: "Lilex", monospace !important;
   font-weight: 500 !important;
 }
 
 [data-theme="acnh"] .MuiTypography-body1,
 [data-theme="acnh"] .MuiTypography-body2,
 [data-theme="acnh"] .research-body-text {
-  font-family: 'acnh_font', monospace !important;
-  font-weight: 300 !important;
+  font-family: "Lilex" monospace !important;
+  font-weight: 400 !important;
   font-size: 16px;
 }
 

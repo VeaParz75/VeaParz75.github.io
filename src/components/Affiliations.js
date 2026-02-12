@@ -144,6 +144,17 @@ const Affiliations = () => {
           </Card>
         ))}
       </Box>
+      <Typography
+        sx={{
+          marginTop: '20px',
+          color: 'black',
+        }}
+        variant="h4"
+        gutterBottom
+        style={{ fontFamily: 'Nunito, sans-serif', fontWeight: 600 }}
+      >
+        Affiliations
+      </Typography>
     </Box>
   );
 };
