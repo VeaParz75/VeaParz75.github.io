@@ -70,7 +70,7 @@ export default function Research() {
     },
     {
       title: `PearSAN: a Machine Learning Method for Inverse Design using Pearson Correlated Surrogate Annealing<br>
-              <b>Accepted for publication to <em>Advanced Optical Materials</em></b><br>`,
+              <b>Published in <em>Advanced Optical Materials</em></b><br>`,
       figure: main_fig,
       summary: `PearSAN is a generative modelling framework designed to identify how changes in device parameters affect the efficiency of thermophotovoltaic (TPV) cells. By learning correlations between QUBO energy functions and TPV performance metrics, it enables faster and more targeted design optimization.<br><br>
       <b>Key Contributions:</b><br>
@@ -79,7 +79,7 @@ export default function Research() {
       - Created all technical figures and contributed to writing and editing the manuscript.<br><br>
       - Presented the work at conferences, including the U.S. Quantum Information Science Summer School and SPIE Optics and Photonics.`,
       borderGradient: ['#eeef00', '#1dfe00'],
-      paperLink: "https://arxiv.org/pdf/2412.19284",
+      paperLink: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202500249",
       skills: [
       { text: "Deep Learning", bgc: "#c4f4ff", tc: "#006d87" },
       { text: "PyTorch", bgc: "#c4f4ff", tc: "#006d87" },
