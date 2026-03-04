@@ -90,8 +90,6 @@ export default function Research() {
       { text: "Technical Illustration", bgc: "#c4f4ff", tc: "#006d87" },
     ]
     },
-    
-    // more papers...
   ];
 
 
